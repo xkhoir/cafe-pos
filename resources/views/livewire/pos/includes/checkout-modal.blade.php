@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="checkoutModalLabel">
-                    <i class="bi bi-cart-check text-primary"></i> Confirm Sale
+                    <i class="bi bi-cart-check text-primary"></i> Konfirmasi Penjualan
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -43,17 +43,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="payment_method">Payment Method <span class="text-danger">*</span></label>
+                                <label for="payment_method">Metode Pembayaran <span class="text-danger">*</span></label>
                                 <select class="form-control" name="payment_method" id="payment_method" required>
-                                    <option value="Cash">Cash</option>
-                                    <option value="Credit Card">Credit Card</option>
+                                    <option value="Cash">Tunai</option>
+                                    <option value="Credit Card">Kartu Kredit</option>
+                                    <option value="Credit Card">Kartu Debit</option>
                                     <option value="Bank Transfer">Bank Transfer</option>
-                                    <option value="Cheque">Cheque</option>
-                                    <option value="Other">Other</option>
+                                    <option value="Other">Lainnya</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="note">Note (If Needed)</label>
+                                <label for="note">Catatan (Jika Dibutuhkan)</label>
                                 <textarea name="note" id="note" rows="5" class="form-control"></textarea>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <tr>
-                                        <th>Total Products</th>
+                                        <th>Total ProduK</th>
                                         <td>
                                                 <span class="badge badge-success">
                                                     {{ Cart::instance($cart_instance)->count() }}
@@ -69,7 +69,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Order Tax ({{ $global_tax }}%)</th>
+                                        <th>PPN ({{ $global_tax }}%)</th>
                                         <td>(+) {{ format_currency(Cart::instance($cart_instance)->tax()) }}</td>
                                     </tr>
                                     <tr>
@@ -77,7 +77,7 @@
                                         <td>(-) {{ format_currency(Cart::instance($cart_instance)->discount()) }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Shipping</th>
+                                        <th>Pengiriman</th>
                                         <input type="hidden" value="{{ $shipping }}" name="shipping_amount">
                                         <td>(+) {{ format_currency($shipping) }}</td>
                                     </tr>

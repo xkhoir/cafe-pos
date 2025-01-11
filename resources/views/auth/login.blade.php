@@ -34,7 +34,7 @@
                     <form id="login" method="post" action="{{ url('/login') }}">
                         @csrf
                         <h1>Login</h1>
-                        <p class="text-muted">Sign In to your account</p>
+                        <p class="text-muted">Masuk ke akun kamu</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                     <span class="input-group-text">
@@ -74,7 +74,7 @@
                             </div>
                             <div class="col-8 text-right">
                                 <a class="btn btn-link px-0" href="{{ route('password.request') }}">
-                                    Forgot password?
+                                    Lupa password?
                                 </a>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
 
             <p class="text-center mt-5 lead">
                 Developed By
-                <a href="https://fahimanzam.netlify.app" class="font-weight-bold text-primary">Fahim Anzam Dip</a>
+                <a href="#" class="font-weight-bold text-primary">xkhoirtech</a>
             </p>
         </div>
     </div>

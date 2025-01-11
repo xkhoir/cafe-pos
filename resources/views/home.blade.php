@@ -20,7 +20,7 @@
                         </div>
                         <div>
                             <div class="text-value text-primary">{{ format_currency($revenue) }}</div>
-                            <div class="text-muted text-uppercase font-weight-bold small">Revenue</div>
+                            <div class="text-muted text-uppercase font-weight-bold small">Pendapatan</div>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         </div>
                         <div>
                             <div class="text-value text-warning">{{ format_currency($sale_returns) }}</div>
-                            <div class="text-muted text-uppercase font-weight-bold small">Sales Return</div>
+                            <div class="text-muted text-uppercase font-weight-bold small">Retur Penjualan</div>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                         </div>
                         <div>
                             <div class="text-value text-success">{{ format_currency($purchase_returns) }}</div>
-                            <div class="text-muted text-uppercase font-weight-bold small">Purchases Return</div>
+                            <div class="text-muted text-uppercase font-weight-bold small">Retur Pembelian</div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         </div>
                         <div>
                             <div class="text-value text-info">{{ format_currency($profit) }}</div>
-                            <div class="text-muted text-uppercase font-weight-bold small">Profit</div>
+                            <div class="text-muted text-uppercase font-weight-bold small">Laba</div>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
             <div class="col-lg-7">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-header">
-                        Sales & Purchases of Last 7 Days
+                        Penjualan dan pembelian 7 hari terakhir
                     </div>
                     <div class="card-body">
                         <canvas id="salesPurchasesChart"></canvas>
@@ -106,7 +106,7 @@
             <div class="col-lg-12">
                 <div class="card border-0 shadow-sm">
                     <div class="card-header">
-                        Monthly Cash Flow (Payment Sent & Received)
+                        Cash Flow Bulanan (Pembayaran dikirim & diterima)
                     </div>
                     <div class="card-body">
                         <canvas id="paymentChart"></canvas>

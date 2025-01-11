@@ -25,7 +25,7 @@
                     <form method="post" action="{{ url('/password/reset') }}">
                         @csrf
                         <h1>Reset Password</h1>
-                        <p class="text-muted">Enter email and new password</p>
+                        <p class="text-muted">Masukkan email dan password kamu</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
